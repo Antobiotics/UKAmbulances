@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Air Ambulance Coverage Map</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+	
+		<link rel="stylesheet" href="/themes/aaa/resources/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="/themes/aaa/resources/css/bootstrap-responsive.min.css" />
+		<link rel="stylesheet" href="/themes/aaa/resources/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="/themes/aaa/resources/css/print.css"  media="print" />
+		<link rel="stylesheet" href="/themes/aaa/resources/css/style.css" />
+		<link rel="stylesheet" href="/themes/aaa/resources/css/shop.css" />
+		<link rel="stylesheet" href="/themes/aaa/resources/css/smoothness/jquery-ui-1.9.1.custom.css" />
+		<link rel="stylesheet" href="/themes/aaa/resources/js/bxslider/jquery.bxslider.css" />
+		
+		<!--[if IE]>
+		<link href="/themes/aaa/resources/css/ie.css" rel="stylesheet" />
+		<![endif]-->
+		<!--[if IE 8]>
+		<link href="/themes/aaa/resources/css/ie8.css" rel="stylesheet" />
+		<![endif]-->
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="/themes/aaa/resources/js/respond.min.js"></script>
+		<script src="/themes/aaa/resources/js/html5shiv.js"></script>
+		<![endif]-->
+	
+		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/ls_javascript_combine/?file%5B%5D=ls_core_jquery"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+		<script src="/themes/aaa/resources/js/bootstrap.min.js"></script>
+		<script src="/themes/aaa/resources/js/bxslider/jquery.bxslider.js"></script>
+		<script src="/themes/aaa/resources/js/jquery.pager.js"></script>
+		
+		<!--[if lte IE 9]>
+		<script src="/themes/aaa/resources/js/jquery.placeholder.js"></script>
+		<script type="text/javascript"> $(document).ready(function(){ $('input, textarea').placeholder(); }); </script>
+		<![endif]-->
+		
+		<script type="text/javascript" src="//use.typekit.net/uzl7ujw.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.quicklinks li').hover(
+					function(){$(this).find('i').addClass('icon-white');},
+					function(){$(this).find('i').removeClass('icon-white');}
+				);
+			});
+		</script>
+				<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>	
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-42229470-1']);
+	_gaq.push(['_trackPageview']);
+	_gaq.push(['_setSiteSpeedSampleRate', 1]);
+
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	</script>
+</head>
+	<body><div class="navbar navbar-fixed-top visible-phone">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="brand" href="/"><img src="/themes/aaa/resources/img/logo-mobile.png" alt="Association of Air Ambulances" /></a>
+			<a class="btn btn-navbar" data-toggle="collapse" data-target="#main-mobile-nav" style="float:right; color:#000">
+				Open Navigation Menu <span class="icon-caret-down"></span>
+			</a>
+			<div class="nav-collapse collapse" id="main-mobile-nav">
+				<ul class="nav mobile-nav">
+																				<li>
+						<a href="/">Home</a>
+					</li>
+										<li>
+						<a href="/coverage">Air Ambulance Coverage Map</a>
+					</li>
+										<li>
+						<a href="/reference-documents">Reference Documents</a>
+					</li>
+										<li>
+						<a href="/news">News</a>
+					</li>
+										<li>
+						<a href="/about">About</a>
+					</li>
+										<li>
+						<a href="/key-issues">Key Issues</a>
+					</li>
+										<li>
+						<a href="/airwaymagazine">Airway</a>
+					</li>
+										<li><a href="/members">Members</a></li>
+					<li><a href="/join-now">Join Now</a></li>					<li><a href="/links">Links</a></li>
+											<li><a href="/login"><i class="icon-user"></i> Login</a></li>
+										<li><a href="/donate">Donate Today</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="minicartwrapper">
+</div><div class="container header hidden-phone">
+	<div class="row">
+		<div class="span2">
+			<a href="/" class="logo">The Association of Air Ambulances</a>
+		</div>
+		<div class="span10">
+			<div class="row">
+				<div class="span10 account-nav">
+					<ul class="nav nav-pills pull-right">
+						<li><a href="/members">Members</a></li>
+						<li class="nav-joinnow"><a href="/join-now">Join Now</a></li>						<li><a href="/links">Links</a></li>
+													<li><a href="/login"><i class="icon-user"></i> Login</a></li>
+												<li class="nav-donation"><a href="/donate">Donate Today</a></li>
+					</ul>
+				</div>
+				<div class="span10 main-nav">
+					<ul class="nav nav-pills">
+																								<li>
+							<a href="/">Home</a>
+						</li>
+												<li>
+							<a href="/coverage">Air Ambulance Coverage Map</a>
+						</li>
+												<li>
+							<a href="/reference-documents">Reference Documents</a>
+						</li>
+												<li>
+							<a href="/news">News</a>
+						</li>
+												<li>
+							<a href="/about">About</a>
+						</li>
+												<li>
+							<a href="/key-issues">Key Issues</a>
+						</li>
+												<li>
+							<a href="/airwaymagazine">Airway</a>
+						</li>
+											</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container slideshow hidden-phone">
+		
+		<div class="slider">
+																				<div class="slideimage" >
+						<img src="/uploaded/thumbnails/db_file_img_301_1500xauto.jpg" alt="The location of all air ambulances" />
+						<div class="slidemessage">
+							<h3>The location of all air ambulances</h3>																							<p>The speedy delivery of advanced life saving expertise and rapid transportation to the best care</p>						</div>
+					</div>
+									<div class="slideimage" style="display:none">
+						<img src="/uploaded/thumbnails/db_file_img_303_1500xauto.jpg" alt="The supply chain" />
+						<div class="slidemessage">
+							<h3>The supply chain</h3>																							<p>From aircraft manufacturer to the bandages used, the supply chain plays a critical part in saving lives</p>						</div>
+					</div>
+									<div class="slideimage" style="display:none">
+						<img src="/uploaded/thumbnails/db_file_img_519_1500xauto.jpg" alt="Ambulance Services" />
+						<div class="slidemessage">
+							<h3>Ambulance Services</h3>																							<p>Air ambulances working in partnership with land transport</p>						</div>
+					</div>
+													</div>
+		<div class="comment-box row">
+			<div class="span12">
+				<div class="key_issues_title">Stop Press: </div>
+				<div class="keyissues_slider">
+																							<div class="key_issues_element"><a href="http://www.associationofairambulances.co.uk/key-issues/">Many UK Hospitals do not have adequate landing facilities...</a></div>
+													<div class="key_issues_element"><a href="http://www.associationofairambulances.co.uk/aaae/nominate-now/">Are you the best in your field? Get nominated for one of the Air Ambulance Awards of Excellence 2017...</a></div>
+													<div class="key_issues_element"><a href="http://www.associationofairambulances.co.uk/event/40/">2017 Annual Conference - BOOK NOW</a></div>
+													<div class="key_issues_element"><a href="http://www.associationofairambulances.co.uk/key-issues/">Ambulance Services are best placed to coordinator pre-hospital care...</a></div>
+													<div class="key_issues_element"><a href="http://www.associationofairambulances.co.uk/news/15/">Air Ambulances are a key part of 20% increase in patient survival rates...</a></div>
+													<div class="key_issues_element"><a href="http://www.associationofairambulances.co.uk/account/">New Best Practice Guidance on Clinical and Operational subject published: visit the members only area now!</a></div>
+													<div class="key_issues_element"><a href="http://www.associationofairambulances.co.uk/framework/">AAA published the Framework for a High Performing Air Ambulance - click here</a></div>
+													<div class="key_issues_element"><a href="http://www.associationofairambulances.co.uk/annual-report/">What did the AAA do in 2016? Check out the annual report - CLICK HERE</a></div>
+													<div class="key_issues_element"><a href="http://www.associationofairambulances.co.uk/bulletin-board/8/">Clinical Incidents and Medical Alerts shared across members</a></div>
+															</div>
+			</div>
+		</div>
+		<div class="window-frame window-frame-border">&nbsp;</div>
+		<div class="window-frame window-frame-lower">&nbsp;</div>
+		
+		<script type="text/javascript">$(document).ready(function(){ 
+			$('.slider').bxSlider({ auto:true, mode: 'fade', pager: false, }); 
+			$('.keyissues_slider').bxSlider({ auto:true, mode:'horizontal', pager:false, controls:false, }); 
+		});</script>
+		
+</div><div class="container header_content hidden-phone">
+	<div class="row">
+		<div class="span12">
+					</div>
+	</div>
+</div>
+<div class="container">
+	<div class="main-content row">
+		<div class="span3 quicklinks">
+					<h3>Maps</h3>
+	<ul class="nav nav-stacked">
+		<li><i class="icon-globe"></i><a href="/coverage">Coverage Map</a></li>
+		<li><i class="icon-globe"></i><a href="/ambulance-services">Ambulance Services</a></li>
+				
+							<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i> Full Members <i class="icon-caret-down"></i></a>
+				<ul class="dropdown-menu">
+									<li><a href="/member/air-ambulance-northern-ireland"><i class="icon-chevron-right"></i> Air Ambulance Northern Ireland</a></li>
+									<li><a href="/member/cornwall-air-ambulance-trust-"><i class="icon-chevron-right"></i> Cornwall Air Ambulance Trust </a></li>
+									<li><a href="/member/devon-air-ambulance-trust"><i class="icon-chevron-right"></i> Devon Air Ambulance Trust</a></li>
+									<li><a href="/member/dorset-and-somerset-air-ambulance-"><i class="icon-chevron-right"></i> Dorset and Somerset Air Ambulance </a></li>
+									<li><a href="/member/east-anglian-air-ambulance"><i class="icon-chevron-right"></i> East Anglian Air Ambulance</a></li>
+									<li><a href="/member/east-midlands-ambulance-service"><i class="icon-chevron-right"></i> East Midlands Ambulance Service</a></li>
+									<li><a href="/member/east-of-england-ambulance-service-nhs-trust"><i class="icon-chevron-right"></i> East of England Ambulance Service NHS Trust</a></li>
+									<li><a href="/member/essex--herts-air-ambulance"><i class="icon-chevron-right"></i> Essex & Herts Air Ambulance</a></li>
+									<li><a href="/member/great-western-air-ambulance-charity"><i class="icon-chevron-right"></i> Great Western Air Ambulance Charity</a></li>
+									<li><a href="/member/hampshire-and-isle-of-wight-air-ambulance"><i class="icon-chevron-right"></i> Hampshire and Isle of Wight Air Ambulance</a></li>
+									<li><a href="/member/kent-surrey--sussex-air-ambulance"><i class="icon-chevron-right"></i> Kent, Surrey & Sussex Air Ambulance</a></li>
+									<li><a href="/member/lincolnshire-and-nottinghamshire-air-ambulance-trust"><i class="icon-chevron-right"></i> Lincolnshire and Nottinghamshire Air Ambulance Trust</a></li>
+									<li><a href="/member/london-ambulance-service"><i class="icon-chevron-right"></i> London Ambulance Service</a></li>
+									<li><a href="/member/londons-air-ambulance"><i class="icon-chevron-right"></i> London's Air Ambulance</a></li>
+									<li><a href="/member/magpas-air-ambulance"><i class="icon-chevron-right"></i> Magpas Air Ambulance</a></li>
+									<li><a href="/member/midlands-air-ambulance-charity"><i class="icon-chevron-right"></i> Midlands Air Ambulance Charity</a></li>
+									<li><a href="/member/north-east-ambulance-service"><i class="icon-chevron-right"></i> North East Ambulance Service</a></li>
+									<li><a href="/member/north-west-air-ambulance-charity"><i class="icon-chevron-right"></i> North West Air Ambulance Charity</a></li>
+									<li><a href="/member/northern-ireland-ambulance-service"><i class="icon-chevron-right"></i> Northern Ireland Ambulance Service</a></li>
+									<li><a href="/member/scotlands-charity-air-ambulance"><i class="icon-chevron-right"></i> Scotland's Charity Air Ambulance</a></li>
+									<li><a href="/member/scottish-ambulance-service"><i class="icon-chevron-right"></i> Scottish Ambulance Service</a></li>
+									<li><a href="/member/south-central-ambulance-service"><i class="icon-chevron-right"></i> South Central Ambulance Service</a></li>
+									<li><a href="/member/south-east-coastal-ambulance-service"><i class="icon-chevron-right"></i> South East Coastal Ambulance Service</a></li>
+									<li><a href="/member/south-western-ambulance-service-nhs-foundation-trust"><i class="icon-chevron-right"></i> South Western Ambulance Service NHS Foundation Trust</a></li>
+									<li><a href="/member/thames-valley-air-ambulance"><i class="icon-chevron-right"></i> Thames Valley Air Ambulance</a></li>
+									<li><a href="/member/the-air-ambulance-service"><i class="icon-chevron-right"></i> The Air Ambulance Service</a></li>
+									<li><a href="/member/wales-air-ambulance-charity"><i class="icon-chevron-right"></i> Wales Air Ambulance Charity</a></li>
+									<li><a href="/member/west-midlands-ambulance-service-nhs-foundationtrust"><i class="icon-chevron-right"></i> West Midlands Ambulance Service NHS FoundationTrust</a></li>
+									<li><a href="/member/wiltshire-air-ambulance"><i class="icon-chevron-right"></i> Wiltshire Air Ambulance</a></li>
+									<li><a href="/member/yorkshire-ambulance-service"><i class="icon-chevron-right"></i> Yorkshire Ambulance Service</a></li>
+								</ul>
+			</li>
+				
+							<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-cog"></i> Associate Members <i class="icon-caret-down"></i></a>
+				<ul class="dropdown-menu">
+				<li><a href="/associates-map"><i class="icon-globe"></i> Associate Members Map</a></li>
+									<li><a href="/member/agusta-westland"><i class="icon-chevron-right"></i> Agusta Westland</a></li>
+									<li><a href="/member/airbus-helicopters"><i class="icon-chevron-right"></i> Airbus Helicopters</a></li>
+									<li><a href="/member/babcock-international"><i class="icon-chevron-right"></i> Babcock International</a></li>
+									<li><a href="/member/bell-helicopter-uk"><i class="icon-chevron-right"></i> Bell Helicopter UK</a></li>
+									<li><a href="/member/bmw-group-%E2%80%93-government--authorities-division"><i class="icon-chevron-right"></i> BMW Group – Government & Authorities Division</a></li>
+									<li><a href="/member/fec-heliports-worldwide-limited"><i class="icon-chevron-right"></i> FEC Heliports Worldwide limited</a></li>
+									<li><a href="/member/lottery-fundraising-services"><i class="icon-chevron-right"></i> Lottery Fundraising Services</a></li>
+									<li><a href="/member/lucy-air-ambulance-for-children"><i class="icon-chevron-right"></i> Lucy Air Ambulance for Children</a></li>
+									<li><a href="/member/medical-aviation-services-"><i class="icon-chevron-right"></i> Medical Aviation Services </a></li>
+									<li><a href="/member/rotor--aircraft"><i class="icon-chevron-right"></i> Rotor & Aircraft</a></li>
+									<li><a href="/member/sloane-helicopters"><i class="icon-chevron-right"></i> Sloane Helicopters</a></li>
+									<li><a href="/member/tower-lotteries"><i class="icon-chevron-right"></i> Tower Lotteries</a></li>
+									<li><a href="/member/turbomeca-uk"><i class="icon-chevron-right"></i> Turbomeca UK</a></li>
+									<li><a href="/member/waypoint-leasing-limited"><i class="icon-chevron-right"></i> Waypoint Leasing Limited</a></li>
+									<li><a href="/member/zoll-medical-uk-ltd"><i class="icon-chevron-right"></i> Zoll Medical UK Ltd</a></li>
+								</ul>
+			</li>
+			</ul>			</div>
+		<div class="span9">
+			<h1>Air Ambulance Coverage Map</h1>
+			
+<div id="map_canvas" class="mapcanvas span8 " style="height:800px; border:0;"></div>
+<script type="text/javascript">
+    <!--
+    console.log("Im here1!!!!!!!!!!!!!!!!!!!!!!!!");
+	var map;
+	var myLatlng;
+
+	function initialize() {  
+		myLatlng = new google.maps.LatLng(54.559323,-4.174805);
+		var myOptions = {
+			zoom: 6,
+			center: myLatlng,
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			zoomControl: true,
+			mapTypeControl: false,
+			streetViewControl: false,
+			panControl: true,
+			draggable: true
+		}
+		map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+		
+		
+				var image2 = 'http://maps.google.com/mapfiles/marker_green.png';
+		var image6 = 'http://maps.google.com/mapfiles/marker.png';
+		var image7 = 'http://maps.google.com/mapfiles/marker_purple.png';
+		//var image = '/themes/aaa/resources/img/map_marker.png';
+									var marker1 = new google.maps.Marker({
+			position: new google.maps.LatLng(54.514807, -1.43129),
+			map: map,
+			title:"Durham Tees Valley Airport",
+			icon: image6			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker1, "click", function() {
+						infowindow.setContent("<h4>Great North Air Ambulance</h4><h5>Durham Tees Valley Airport</h5><address></address>")
+						infowindow.open(map, marker1);
+		});
+													var marker2 = new google.maps.Marker({
+			position: new google.maps.LatLng(54.69523, -2.666818),
+			map: map,
+			title:"Langwathby",
+			icon: image6			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker2, "click", function() {
+						infowindow.setContent("<h4>Great North Air Ambulance</h4><h5>Langwathby</h5><address></address>")
+						infowindow.open(map, marker2);
+		});
+													var marker3 = new google.maps.Marker({
+			position: new google.maps.LatLng(50.72058, -3.476374),
+			map: map,
+			title:"Exeter",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker3, "click", function() {
+						infowindow.setContent("<h4>Devon Air Ambulance Trust</h4><h5>Exeter</h5><address>Exeter International Airport,<br /> Exeter,<br /> Devon,<br /> EX2 7HQ</address><br /><a href=\"/member/devon-air-ambulance-trust\">View Details</a>")
+						infowindow.open(map, marker3);
+		});
+													var marker4 = new google.maps.Marker({
+			position: new google.maps.LatLng(50.926714, -3.987978),
+			map: map,
+			title:"Steve Ford Airbase in North Devon",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker4, "click", function() {
+						infowindow.setContent("<h4>Devon Air Ambulance Trust</h4><h5>Steve Ford Airbase in North Devon</h5><address>Steve Ford Airbase,<br /> Eaglescott,<br /> Umberleigh,<br /> Burrington,<br /> Devon,<br /> EX37 9LH</address><br /><a href=\"/member/devon-air-ambulance-trust\">View Details</a>")
+						infowindow.open(map, marker4);
+		});
+													var marker84 = new google.maps.Marker({
+			position: new google.maps.LatLng(53.469934, -2.387571),
+			map: map,
+			title:"CIty Heliport, Barton, Manchester",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker84, "click", function() {
+						infowindow.setContent("<h4>North West Air Ambulance Charity</h4><h5>CIty Heliport, Barton, Manchester</h5><address>Liverpool Road,<br /> Manchester,<br /> M30 7SA</address><br /><a href=\"/member/north-west-air-ambulance-charity\">View Details</a>")
+						infowindow.open(map, marker84);
+		});
+																				var marker25 = new google.maps.Marker({
+			position: new google.maps.LatLng(50.981636, -2.35877),
+			map: map,
+			title:"Henstridge Airfield",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker25, "click", function() {
+						infowindow.setContent("<h4>Dorset and Somerset Air Ambulance </h4><h5>Henstridge Airfield</h5><address>Henstridge Airfield,<br /> The Marsh,<br /> Templecombe,<br /> Somerset,<br /> BA8 0TN</address><br /><a href=\"/member/dorset-and-somerset-air-ambulance-\">View Details</a>")
+						infowindow.open(map, marker25);
+		});
+													var marker26 = new google.maps.Marker({
+			position: new google.maps.LatLng(52.646185, -2.298643),
+			map: map,
+			title:"Cosford Airbase",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker26, "click", function() {
+						infowindow.setContent("<h4>Midlands Air Ambulance Charity</h4><h5>Cosford Airbase</h5><address>Cosford,<br /> Albrighton,<br /> Nr Wolverhampton,<br /> West Midlands,<br /> WV7 3EX</address><br /><a href=\"/member/midlands-air-ambulance-charity\">View Details</a>")
+						infowindow.open(map, marker26);
+		});
+													var marker27 = new google.maps.Marker({
+			position: new google.maps.LatLng(52.064732, -2.156941),
+			map: map,
+			title:"Strensham Airbase",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker27, "click", function() {
+						infowindow.setContent("<h4>Midlands Air Ambulance Charity</h4><h5>Strensham Airbase</h5><address>M5 Services,<br /> Northbound,<br /> Strensham,<br /> Worcestershire,<br /> WR8 0BZ</address><br /><a href=\"/member/midlands-air-ambulance-charity\">View Details</a>")
+						infowindow.open(map, marker27);
+		});
+													var marker29 = new google.maps.Marker({
+			position: new google.maps.LatLng(52.817733, -1.760087),
+			map: map,
+			title:"Tatenhill Airbase",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker29, "click", function() {
+						infowindow.setContent("<h4>Midlands Air Ambulance Charity</h4><h5>Tatenhill Airbase</h5><address>Newborough Road,<br /> Needwood,<br /> Burton-on-Trent,<br /> Staffordshire,<br /> DE13 9PD</address><br /><a href=\"/member/midlands-air-ambulance-charity\">View Details</a>")
+						infowindow.open(map, marker29);
+		});
+													var marker31 = new google.maps.Marker({
+			position: new google.maps.LatLng(52.210611, 0.173581),
+			map: map,
+			title:"Cambridge Airport",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker31, "click", function() {
+						infowindow.setContent("<h4>East Anglian Air Ambulance</h4><h5>Cambridge Airport</h5><address>Cambridge Airport,<br /> Newmarket Road,<br /> Cambridge,<br /> Cambs,<br /> CB5 8UU</address><br /><a href=\"/member/east-anglian-air-ambulance\">View Details</a>")
+						infowindow.open(map, marker31);
+		});
+													var marker34 = new google.maps.Marker({
+			position: new google.maps.LatLng(51.616134, -1.097302),
+			map: map,
+			title:"RAF Benson",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker34, "click", function() {
+						infowindow.setContent("<h4>Thames Valley Air Ambulance</h4><h5>RAF Benson</h5><address></address><br /><a href=\"/member/thames-valley-air-ambulance\">View Details</a>")
+						infowindow.open(map, marker34);
+		});
+													var marker33 = new google.maps.Marker({
+			position: new google.maps.LatLng(52.669686, 1.277217),
+			map: map,
+			title:"Norwich Airport",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker33, "click", function() {
+						infowindow.setContent("<h4>East Anglian Air Ambulance</h4><h5>Norwich Airport</h5><address>Norwich Airport,<br /> Hangar E,<br /> Gambling Close,<br /> Norwich,<br /> Norfolk,<br /> NR66EG</address><br /><a href=\"/member/east-anglian-air-ambulance\">View Details</a>")
+						infowindow.open(map, marker33);
+		});
+													var marker53 = new google.maps.Marker({
+			position: new google.maps.LatLng(51.908582, 0.680753),
+			map: map,
+			title:"Essex Air Ambulance Earls Colne Airbase",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker53, "click", function() {
+						infowindow.setContent("<h4>Essex & Herts Air Ambulance</h4><h5>Essex Air Ambulance Earls Colne Airbase</h5><address>Hangar 1,<br /> Earls Colne Airfield,<br /> Earls Colne,<br /> Colchester,<br /> Essex,<br /> CO6 2NS</address><br /><a href=\"/member/essex--herts-air-ambulance\">View Details</a>")
+						infowindow.open(map, marker53);
+		});
+													var marker56 = new google.maps.Marker({
+			position: new google.maps.LatLng(51.718601, 0.150397),
+			map: map,
+			title:"Herts Air Ambulance Airbase ",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker56, "click", function() {
+						infowindow.setContent("<h4>Essex & Herts Air Ambulance</h4><h5>Herts Air Ambulance Airbase </h5><address>Hangar 7,<br /> North Weald Airfield,<br /> North Weald,<br /> Essex,<br /> CM16 6HR</address><br /><a href=\"/member/essex--herts-air-ambulance\">View Details</a>")
+						infowindow.open(map, marker56);
+		});
+													var marker59 = new google.maps.Marker({
+			position: new google.maps.LatLng(51.21183, -1.594992),
+			map: map,
+			title:"Thruxton Airbase",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker59, "click", function() {
+						infowindow.setContent("<h4>Hampshire and Isle of Wight Air Ambulance</h4><h5>Thruxton Airbase</h5><address></address><br /><a href=\"/member/hampshire-and-isle-of-wight-air-ambulance\">View Details</a>")
+						infowindow.open(map, marker59);
+		});
+													var marker60 = new google.maps.Marker({
+			position: new google.maps.LatLng(50.432547, -4.984103),
+			map: map,
+			title:"Charity and Operations HQ",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker60, "click", function() {
+						infowindow.setContent("<h4>Cornwall Air Ambulance Trust </h4><h5>Charity and Operations HQ</h5><address>Cornwall Air Ambulance Trust HQ,<br /> Trevithick Downs,<br /> Newquay,<br /> Cornwall,<br /> TR8 4DY</address><br /><a href=\"/member/cornwall-air-ambulance-trust-\">View Details</a>")
+						infowindow.open(map, marker60);
+		});
+													var marker61 = new google.maps.Marker({
+			position: new google.maps.LatLng(55.861916, -4.29611),
+			map: map,
+			title:"Glasgow Rotary",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker61, "click", function() {
+						infowindow.setContent("<h4>Scottish Ambulance Service</h4><h5>Glasgow Rotary</h5><address>City Heliport,<br /> 110 Stobcross Road,<br /> Glasgow,<br /> Lanarkshire,<br /> G3 8QQ</address><br /><a href=\"/member/scottish-ambulance-service\">View Details</a>")
+						infowindow.open(map, marker61);
+		});
+													var marker62 = new google.maps.Marker({
+			position: new google.maps.LatLng(57.540559, -4.04193),
+			map: map,
+			title:"Inverness Rotary",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker62, "click", function() {
+						infowindow.setContent("<h4>Scottish Ambulance Service</h4><h5>Inverness Rotary</h5><address>Inverness Airport,<br /> Inverness,<br /> IV2 7JB</address><br /><a href=\"/member/scottish-ambulance-service\">View Details</a>")
+						infowindow.open(map, marker62);
+		});
+													var marker63 = new google.maps.Marker({
+			position: new google.maps.LatLng(55.871636, -4.424451),
+			map: map,
+			title:"Glasgow Fixed-wing",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker63, "click", function() {
+						infowindow.setContent("<h4>Scottish Ambulance Service</h4><h5>Glasgow Fixed-wing</h5><address>Scottish Air Ambulance Divisional HQ,<br /> 180 Abbotsinch Road,<br /> Paisley,<br /> Renfrewshire,<br /> PA3 2RY</address><br /><a href=\"/member/scottish-ambulance-service\">View Details</a>")
+						infowindow.open(map, marker63);
+		});
+													var marker64 = new google.maps.Marker({
+			position: new google.maps.LatLng(57.202689, -2.192773),
+			map: map,
+			title:"Aberdeen Fixed-wing",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker64, "click", function() {
+						infowindow.setContent("<h4>Scottish Ambulance Service</h4><h5>Aberdeen Fixed-wing</h5><address>Hangar 3,<br /> Aberdeen Airport East,<br /> Farburn Terrace,<br /> Aberdeen,<br /> AB21 7DT</address><br /><a href=\"/member/scottish-ambulance-service\">View Details</a>")
+						infowindow.open(map, marker64);
+		});
+													var marker65 = new google.maps.Marker({
+			position: new google.maps.LatLng(52.371355, -1.482232),
+			map: map,
+			title:"Coventry Airport",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker65, "click", function() {
+						infowindow.setContent("<h4>The Air Ambulance Service</h4><h5>Coventry Airport</h5><address></address><br /><a href=\"/member/the-air-ambulance-service\">View Details</a>")
+						infowindow.open(map, marker65);
+		});
+													var marker66 = new google.maps.Marker({
+			position: new google.maps.LatLng(52.830692, -1.332328),
+			map: map,
+			title:"East Midlands Airport",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker66, "click", function() {
+						infowindow.setContent("<h4>The Air Ambulance Service</h4><h5>East Midlands Airport</h5><address></address><br /><a href=\"/member/the-air-ambulance-service\">View Details</a>")
+						infowindow.open(map, marker66);
+		});
+													var marker67 = new google.maps.Marker({
+			position: new google.maps.LatLng(54.206480, -1.395914),
+			map: map,
+			title:"RAF Topcliffe",
+			icon: image6			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker67, "click", function() {
+						infowindow.setContent("<h4>Yorkshire Air Ambulance</h4><h5>RAF Topcliffe</h5><address></address>")
+						infowindow.open(map, marker67);
+		});
+													var marker68 = new google.maps.Marker({
+			position: new google.maps.LatLng(53.650300, -1.387187),
+			map: map,
+			title:"The Nostell Priory Estate",
+			icon: image6			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker68, "click", function() {
+						infowindow.setContent("<h4>Yorkshire Air Ambulance</h4><h5>The Nostell Priory Estate</h5><address></address>")
+						infowindow.open(map, marker68);
+		});
+													var marker69 = new google.maps.Marker({
+			position: new google.maps.LatLng(53.77182, -3.033922),
+			map: map,
+			title:"Blackpool Airport",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker69, "click", function() {
+						infowindow.setContent("<h4>North West Air Ambulance Charity</h4><h5>Blackpool Airport</h5><address></address><br /><a href=\"/member/north-west-air-ambulance-charity\">View Details</a>")
+						infowindow.open(map, marker69);
+		});
+													var marker70 = new google.maps.Marker({
+			position: new google.maps.LatLng(51.698501, -4.121069),
+			map: map,
+			title:"Charity HQ and South Base",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker70, "click", function() {
+						infowindow.setContent("<h4>Wales Air Ambulance Charity</h4><h5>Charity HQ and South Base</h5><address>Tŷ Elusen, Ffordd Angel,<br /> Llanelli Gate,<br /> Dafen,<br /> Llanelli,<br /> SA14 8LQ</address><br /><a href=\"/member/wales-air-ambulance-charity\">View Details</a>")
+						infowindow.open(map, marker70);
+		});
+													var marker71 = new google.maps.Marker({
+			position: new google.maps.LatLng(53.100497, -4.335265),
+			map: map,
+			title:"North Base",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker71, "click", function() {
+						infowindow.setContent("<h4>Wales Air Ambulance Charity</h4><h5>North Base</h5><address>Caernarfon Airport,<br /> Dinas Dinlle,<br /> Caernarfon,<br /> LL54 5TP</address><br /><a href=\"/member/wales-air-ambulance-charity\">View Details</a>")
+						infowindow.open(map, marker71);
+		});
+													var marker72 = new google.maps.Marker({
+			position: new google.maps.LatLng(52.631010, -3.149343),
+			map: map,
+			title:"Mid Base",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker72, "click", function() {
+						infowindow.setContent("<h4>Wales Air Ambulance Charity</h4><h5>Mid Base</h5><address>Mid Wales Airport,<br /> Welshpool,<br /> SY21 8SG</address><br /><a href=\"/member/wales-air-ambulance-charity\">View Details</a>")
+						infowindow.open(map, marker72);
+		});
+													var marker73 = new google.maps.Marker({
+			position: new google.maps.LatLng(52.354786, -0.106816),
+			map: map,
+			title:"RAF Wyton, Cambridgeshire",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker73, "click", function() {
+						infowindow.setContent("<h4>Magpas Air Ambulance</h4><h5>RAF Wyton, Cambridgeshire</h5><address></address><br /><a href=\"/member/magpas-air-ambulance\">View Details</a>")
+						infowindow.open(map, marker73);
+		});
+													var marker74 = new google.maps.Marker({
+			position: new google.maps.LatLng(53.166322, -0.523868),
+			map: map,
+			title:"RAF Waddington, Lincolnshire",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker74, "click", function() {
+						infowindow.setContent("<h4>Lincolnshire and Nottinghamshire Air Ambulance Trust</h4><h5>RAF Waddington, Lincolnshire</h5><address></address><br /><a href=\"/member/lincolnshire-and-nottinghamshire-air-ambulance-trust\">View Details</a>")
+						infowindow.open(map, marker74);
+		});
+													var marker75 = new google.maps.Marker({
+			position: new google.maps.LatLng(51.177129, 0.48541),
+			map: map,
+			title:"Marden HQ",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker75, "click", function() {
+						infowindow.setContent("<h4>Kent, Surrey & Sussex Air Ambulance</h4><h5>Marden HQ</h5><address></address><br /><a href=\"/member/kent-surrey--sussex-air-ambulance\">View Details</a>")
+						infowindow.open(map, marker75);
+		});
+													var marker76 = new google.maps.Marker({
+			position: new google.maps.LatLng(51.519205, -2.588267),
+			map: map,
+			title:"Filton Airport, Bristol",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker76, "click", function() {
+						infowindow.setContent("<h4>Great Western Air Ambulance Charity</h4><h5>Filton Airport, Bristol</h5><address></address><br /><a href=\"/member/great-western-air-ambulance-charity\">View Details</a>")
+						infowindow.open(map, marker76);
+		});
+													var marker78 = new google.maps.Marker({
+			position: new google.maps.LatLng(51.21977, -0.143093),
+			map: map,
+			title:"Redhill",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker78, "click", function() {
+						infowindow.setContent("<h4>Kent, Surrey & Sussex Air Ambulance</h4><h5>Redhill</h5><address></address><br /><a href=\"/member/kent-surrey--sussex-air-ambulance\">View Details</a>")
+						infowindow.open(map, marker78);
+		});
+													var marker79 = new google.maps.Marker({
+			position: new google.maps.LatLng(56.436429, -3.373961),
+			map: map,
+			title:"Scotland's Charity Air Ambulance",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker79, "click", function() {
+						infowindow.setContent("<h4>Scotland's Charity Air Ambulance</h4><h5>Scotland's Charity Air Ambulance</h5><address>The Control Tower,<br /> Perth Airport,<br /> Scone,<br /> Perth,<br /> Perthshire,<br /> PH2 6PL</address><br /><a href=\"/member/scotlands-charity-air-ambulance\">View Details</a>")
+						infowindow.open(map, marker79);
+		});
+													var marker80 = new google.maps.Marker({
+			position: new google.maps.LatLng(51.356091, -1.983709),
+			map: map,
+			title:"Operations Centre",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker80, "click", function() {
+						infowindow.setContent("<h4>Wiltshire Air Ambulance</h4><h5>Operations Centre</h5><address>London Road,<br /> Devizes,<br /> Wiltshire,<br /> SN10 2DN</address><br /><a href=\"/member/wiltshire-air-ambulance\">View Details</a>")
+						infowindow.open(map, marker80);
+		});
+													var marker81 = new google.maps.Marker({
+			position: new google.maps.LatLng(51.517982, -0.0598),
+			map: map,
+			title:"London's Helipad",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker81, "click", function() {
+						infowindow.setContent("<h4>London's Air Ambulance</h4><h5>London's Helipad</h5><address></address><br /><a href=\"/member/londons-air-ambulance\">View Details</a>")
+						infowindow.open(map, marker81);
+		});
+													var marker82 = new google.maps.Marker({
+			position: new google.maps.LatLng(53.389991, -3.023009),
+			map: map,
+			title:"Birkenhead",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker82, "click", function() {
+						infowindow.setContent("<h4>North West Air Ambulance Charity</h4><h5>Birkenhead</h5><address></address><br /><a href=\"/member/north-west-air-ambulance-charity\">View Details</a>")
+						infowindow.open(map, marker82);
+		});
+													var marker103 = new google.maps.Marker({
+			position: new google.maps.LatLng(51.467875, -3.137954),
+			map: map,
+			title:"South Base (East)",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker103, "click", function() {
+						infowindow.setContent("<h4>Wales Air Ambulance Charity</h4><h5>South Base (East)</h5><address>Cardiff Heliport,<br /> Foreshore Road,<br /> Cardiff,<br /> CF10 4LZ</address><br /><a href=\"/member/wales-air-ambulance-charity\">View Details</a>")
+						infowindow.open(map, marker103);
+		});
+													var marker105 = new google.maps.Marker({
+			position: new google.maps.LatLng(54.597812, -5.930712),
+			map: map,
+			title:"Headquarters",
+			icon: image2			
+		});
+		var infowindow = new google.maps.InfoWindow({
+			content: ''
+		});
+		google.maps.event.addListener(marker105, "click", function() {
+						infowindow.setContent("<h4>Air Ambulance Northern Ireland</h4><h5>Headquarters</h5><address>Moore Stephens (NI) LLP Donegal House,<br /> 7 Donegal Square North,<br /> Belfast,<br /> BT1 5EB</address><br /><a href=\"/member/air-ambulance-northern-ireland\">View Details</a>")
+						infowindow.open(map, marker105);
+		});
+										}
+
+	function loadScript() {
+		var script = document.createElement("script");
+		script.type = "text/javascript";
+		script.src = "http://maps.google.com/maps/api/js?sensor=false&callback=initialize";
+		document.body.appendChild(script);
+	}
+	
+	$('document').ready(function(){loadScript();});
+	-->
+</script>		</div>
+	</div>
+</div>
+<div class="container featured hidden-phone">
+		<div class="row">
+		<div class="span4">
+				</div>
+		<div class="span4">
+				</div>
+		<div class="span4">
+				</div>
+	</div>
+	</div>
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="span4">
+				<h4>Contact Us</h4>
+				<h4>Association of Air Ambulances Ltd</h4>
+<h5>50 High Street, Henley in Arden,</h5>
+<h5>Warwickshire, B95 5AN</h5>
+<p>Company Number: 8341197</p>
+<p>VAT Number: GB 135 779773</p>
+<p>Email:&nbsp;<a href="mailto:info@associationofairambulances.co.uk">info@associationofairambulances.co.uk</a></p>
+<p>Tel:<strong>&nbsp;+44 (0) 1564 339959</strong></p>			</div>
+			<div class="span8">
+				<div class="row">
+					<div class="span6 twitter">
+						<a class="twitter-timeline" href="https://twitter.com/AsoAirAmbulance" data-widget-id="345162178996867072" style="width:800px;height:200px"  data-chrome="nofooter noborders transparent" data-tweet-limit="2">Tweets by @AsoAirAmbulance</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					</div>
+					<div class="span2 social-icons">
+						<a href="https://twitter.com/AsoAirAmbulance"><i class="icon-twitter-sign"></i></a>
+						<a href="https://www.facebook.com/groups/246662585436607/"><i class="icon-facebook-sign"></i></a>
+						<a href="http://www.youtube.com/user/AsoAirAmbulances"><i class="icon-youtube-sign"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="basebar">
+	<div class="container">
+		<div class="row">
+			<div class="span4">
+				<ul class="nav nav-pills">
+					<li><a href="/terms-and-conditions">Terms & Conditions</a></li>
+					<li><a href="/privacy-policy">Privacy Policy</a></li>
+					<li><a href="/sitemap">Sitemap</a></li>
+				</ul>
+			</div>
+			<div class="span8">
+				<ul class="nav nav-pills pull-right">
+															<li>
+						<a href="/">Home</a>
+					</li>
+										<li>
+						<a href="/coverage">Air Ambulance Coverage Map</a>
+					</li>
+										<li>
+						<a href="/reference-documents">Reference Documents</a>
+					</li>
+										<li>
+						<a href="/news">News</a>
+					</li>
+										<li>
+						<a href="/about">About</a>
+					</li>
+										<li>
+						<a href="/key-issues">Key Issues</a>
+					</li>
+										<li>
+						<a href="/airwaymagazine">Airway</a>
+					</li>
+									</ul>
+				<a href="http://www.geonetsolutions.co.uk/"><img src="/resources/img/geonet-white.png" alt="geonet-logo" class="geonet-logo"/></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+
+// Customize twitter feed
+var hideTwitterAttempts = 0;
+function hideTwitterBoxElements() {
+    setTimeout( function() {
+        if ( $('[id*=twitter]').length ) {
+        $('[id*=twitter]').each( function(){
+            if ( $(this).width() == 220 ) {
+                $(this).width( 198 ); //override min-width of 220px
+            }
+            var ibody = $(this).contents().find( 'body' );
+            ibody.width( $(this).width() ); //remove scrollbar by adding width
+			$('#footer').css('overflow','hidden');
+
+            if ( ibody.find( '.timeline .stream .h-feed li.tweet' ).length ) {
+            ibody.find( '.inline-media img' ).css( 'border', 0 );
+            ibody.find( '.inline-media img' ).css( 'overflow-x', 'hidden' );
+            ibody.find( '.inline-media img' ).css( 'overflow-y', 'scroll' );
+            ibody.find( '.inline-media img').hide();
+            ibody.find( '.inline-media img').hide();
+            }
+            else {
+                $(this).hide();
+            }
+        });
+        }
+        hideTwitterAttempts++;
+        if ( hideTwitterAttempts < 3 ) {
+            hideTwitterBoxElements();
+        }
+    }, 700);
+}
+
+// somewhere in your code after html page load
+hideTwitterBoxElements();
+</script>	</body>
+</html>
