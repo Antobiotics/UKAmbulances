@@ -66,7 +66,7 @@ aa.sample.df <-
   ) %>% ungroup()
 
 
-avg.model <-
+model <-
   aa.sample.df %>%
   dplyr::group_by(ss_lat, ss_lon) %>%
   dplyr::summarise(
@@ -86,7 +86,7 @@ if (test) {
 
 isochrone.map <-
 UK.map +
-  stat_contour(data = avg.model,
+  stat_contour(data = model,
                aes(x = ss_lon, y = ss_lat, z = avg_time_hours, colour = ..level..),
                binwidth = 0.05, alpha = 1) +
   geom_point(data = air.ambulances, aes(x = lon, y = lat), color = 'black', size = 1)
