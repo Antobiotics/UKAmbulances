@@ -67,44 +67,23 @@ avg.model <-
     avg_time_hours = min(time_hours)
   )
 
+test <- FALSE
+if (test) {
+  ll <-
+    aa.sample.df %>%
+    dplyr::left_join(air.ambulances, by = c("aa_lat" = 'lat', 'aa_lon' = 'lon')) %>%
+    dplyr::filter(member == 'Air Ambulance Northern Ireland')
 
-ll <-
-  aa.sample.df %>%
-  dplyr::left_join(air.ambulances, by = c("aa_lat" = 'lat', 'aa_lon' = 'lon')) %>%
-  dplyr::filter(member == 'Air Ambulance Northern Ireland')
-
-ggplot(ll) +
-  geom_point(aes(x = ss_lon, y = ss_lat, color = time_hours))
-
-hist(avg.model$avg_time_hours)
-
-
-
-#make the map
-ggmap(cmb) +
-  stat_contour(data = distance.df, aes(x = lon,y = lat,z = minutes), breaks = c(0, dt),
-               geom = "polygon", size = 1, fill = "yellow",color = "blue", alpha = 0.5) +
-  geom_point(data = geocode_locations, aes(lon, lat, color = names), size = 6) +
-  scale_color_discrete("") +
-  # theme_clean() +
-  ggtitle(paste("Trade Area for Ohio Stadium as of", date()))
-
+  ggplot(ll) +
+    geom_point(aes(x = ss_lon, y = ss_lat, color = time_hours))
+}
 
 isochrone.map <-
 UK.map +
   stat_contour(data = avg.model,
-               aes(x = ss_lon, y = ss_lat, z = avg_time_hours, color = avg_time_hours)) +
-               # breaks = c(0, 0.5, 1, 2),
-               # geom = 'polygon',
-               # size = 1, alpha = 0.5) +
+               aes(x = ss_lon, y = ss_lat, z = avg_time_hours, colour = ..level..),
+               binwidth = 0.05, alpha = 1) +
   geom_point(data = air.ambulances, aes(x = lon, y = lat), color = 'black', size = 1)
-
-
-isochrone.map +
-  geom_point(data = aa.sample.df, aes(x = ss_lon,  y = ss_lat), color = 'black', alpha = 0.25)
-
-ggplot(avg.model) +
-  geom_point(aes(x = ss_lon, y = ss_lat, color = avg_time_hours))
 
 
 
