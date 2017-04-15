@@ -64,14 +64,14 @@ avg.model <-
   aa.sample.df %>%
   dplyr::group_by(ss_lat, ss_lon) %>%
   dplyr::summarise(
-    avg_time_hours = mean(time_hours)
+    avg_time_hours = min(time_hours)
   )
 
 
 ll <-
   aa.sample.df %>%
   dplyr::left_join(air.ambulances, by = c("aa_lat" = 'lat', 'aa_lon' = 'lon')) %>%
-  dplyr::filter(station == 'Glasgow Rotary')
+  dplyr::filter(member == 'Air Ambulance Northern Ireland')
 
 ggplot(ll) +
   geom_point(aes(x = ss_lon, y = ss_lat, color = time_hours))
