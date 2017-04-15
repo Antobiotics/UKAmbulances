@@ -10,6 +10,7 @@ setwd('/Users/gregoirelejay/dev/others/personal/air_ambulance/')
 
 # TODO:
 # - Ferry time basic
+# - Better levels
 # - Better Visualisation
 
 
