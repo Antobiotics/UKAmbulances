@@ -8,6 +8,11 @@ library(tidyr)
 
 setwd('/Users/gregoirelejay/dev/others/personal/air_ambulance/')
 
+# TODO:
+# - Ferry time basic
+# - Better Visualisation
+
+
 UK.coords <- as.numeric(geocode("United Kingdom"))
 UK.map <-
   ggmap(
